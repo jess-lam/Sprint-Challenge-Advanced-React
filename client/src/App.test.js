@@ -31,12 +31,8 @@ getByTestId("sub-title");
 test("toggles Dark Mode", () => {
   // ARRANGE
   const container = document.body;
-  //const getByText = container.getAllByText;
 
-  // ACT
+  //ACT
+  const toggleDarkModeExists= container.classList.contains("dark-mode")
 
-  const toggleDarkModeExists= container.getElementById("dark-mode")
-
-  // ASSERT
-  expect(toggleDarkModeExists).toBeInTheDocument
 });
