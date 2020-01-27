@@ -21,7 +21,7 @@ class App extends React.Component {
     return (
       <div className="playerCard">
         <Navbar />
-        <h1>Players Ranked by Internet Search</h1>
+        <h1 data-testid="sub-title">Players Ranked by Internet Search</h1>
         <div>
         {this.state.players.map(player => {
           return <PlayerCard name={player.name} country={player.country} searches={player.searches}/>
